@@ -39,11 +39,11 @@
 </head>
 
 <body class="font-body p-0 m-0 text-gray1 bg-white2 text-base">
-    <header>
-        <h1 class="font-title text-2xl pt-7 px-2">Classic Cheesecake Recipe</h1>
-        <div class="flex flex-row items-start px-2 pt-3">
+    <header class="md:grid md:grid-cols-5">
+        <h1 class="font-title text-2xl md:text-5xl pt-7 px-2 md:col-start-2 md:col-span-3">Classic Cheesecake Recipe</h1>
+        <div class="flex flex-row items-start px-2 pt-3 md:col-start-2 md:col-span-4">
             <img src="../assets/6dots.svg">
-            <p class="italic text-xs text-gray2 pb-5 pl-2 -mt-1">Look no further for a creamy and ultra smooth classic cheesecake
+            <p class="italic text-xs md:text-sm text-gray2 pb-5 pl-2 -mt-1 md:w-2/5">Look no further for a creamy and ultra smooth classic cheesecake
                 recipe! Paired with a buttery graham
                 cracker
                 crust,
@@ -51,9 +51,9 @@
             </p>
         </div>
     </header>
-    <main class="grid grid-cols-1 md:grid-cols-2 ">
-        <img class="px-2 md:col-span-2 md:w-4/5" src="../assets/photo1.png">
-        <section class="pt-5 px-2">
+    <main class="grid grid-cols-1 md:grid-cols-5 md:gap-2">
+        <img class="px-2 md:col-span-3 md:col-start-2" src="../assets/photo1.png">
+        <section class="pt-5 px-2 shadow-xl rounded-lg box-border h-min w-max md:py-10 md:px-7 md:col-span-4 md:col-start-4 md:row-start-2">
             <div class="flex flex-row">
                 <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px" fill="#f2994a">
                     <path d="M0 0h24v24H0V0z" fill="none" />
@@ -61,11 +61,11 @@
                         d="M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z" />
                     </svg>
                 <div class="pl-2">
-                    <p class="uppercase text-gray4 text-[8px] leading-[10px]">yields</p>
-                    <p class="text-orange text-[10px] leading-3">12 servings</p>
+                    <p class="uppercase text-gray4 text-[8px] md:text-[10px] leading-[10px]">yields</p>
+                    <p class="text-orange text-[10px] md:text-sm leading-3">12 servings</p>
                 </div>
             </div>
-            <div class="flex flex-row justify-between pt-5">
+            <div class="flex flex-row md:flex-col justify-between pt-5">
                 <div class="flex flex-row">
                     <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="20px"
                         viewBox="0 0 24 24" width="20px" fill="#4f4f4f">
@@ -80,11 +80,11 @@
                         </g>
                     </svg>
                     <div class="pl-2">
-                        <p class="uppercase text-gray4 text-[8px] leading-[10px]">prep time</p>
-                        <p class="text-[10px] leading-3">45 minutes</p>
+                        <p class="uppercase text-gray4 text-[8px] md:text-[10px] leading-[10px]">prep time</p>
+                        <p class="text-[10px] md:text-sm leading-3">45 minutes</p>
                     </div>
                 </div>
-                <div class="flex flex-row">
+                <div class="flex flex-row md:pt-5">
                     <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="20px"
                         viewBox="0 0 24 24" width="20px" fill="#4f4f4f">
                         <g>
@@ -98,11 +98,11 @@
                         </g>
                     </svg>
                     <div class="pl-2">
-                        <p class="uppercase text-gray4 text-[8px] leading-[10px]">cook time</p>
-                        <p class="text-[10px] leading-3">1 hour</p>
+                        <p class="uppercase text-gray4 text-[8px] md:text-[10px] leading-[10px]">cook time</p>
+                        <p class="text-[10px] leading-3 md:text-sm">1 hour</p>
                     </div>
                 </div>
-                <div class="flex flex-row">
+                <div class="flex flex-row md:pt-5">
                     <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="20px"
                         viewBox="0 0 24 24" width="20px" fill="#4f4f4f">
                         <g>
@@ -116,13 +116,13 @@
                         </g>
                     </svg>
                     <div class="pl-2">
-                        <p class="uppercase text-gray4 text-[8px] leading-[10px]">total time</p>
-                        <p class="text-[10px] leading-3">7,75 hourss</p>
+                        <p class="uppercase text-gray4 text-[8px] md:text-[10px] leading-[10px]">total time</p>
+                        <p class="text-[10px] md:text-sm leading-3">7,75 hourss</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="px-2">
+        <section class="px-2 md:col-start-2 md:col-span-2">
             <h2 class="text-gray1 font-bold font-title text-lg">Ingredients</h2>
             <p class="italic text-base font-title">Graham Cracker Crust</p>
             <div class="flex flex-col pt-3">
@@ -167,7 +167,7 @@
                             sauce</span> (recipe in notes)</label></div>
             </div>
         </section>
-        <section class="px-2">
+        <section class="px-2 md:col-start-2 md:col-span-2">
             <h2 class="text-gray1 font-bold font-title text-2xl">Instructions</h2>
             <div class="grid grid-cols-2 gap-2 pt-3 pb-2">
                 <span class="font-title text-white1 text-2xl bg-orange px-4  h-10 w-10 rounded-md">1</span>
